@@ -33,14 +33,6 @@ Panduan konfigurasi aplikasi
 
 
 Panduan penggunaan aplikasi
-1. Masuk ke localhost setelah artisan serve
-2. Login menggunakan akun yang ada, jika ingin melakukan CRUD pemesanan bisa menggunakan admin, jika ingin melakukan approval pemesanan menggunakan akun approval.
-3. Jika melakukan register, otomatis user akan menjadi role "ADMIN"
-4. Setelah masuk langsung ke tampilan dashboard yang menjelaskan Jumlah Permintaan Kendaraan dan Status laporan permintaan kendaraan
-5. Admin dapat melakukan CRUD pemesanan dan pemilihan driver serta ditujukan kepada siapa
-6. terdapat log history approval , log history akan bertambah ketika ada perubahan status laporan
-7. terdapat log aktivitas dimana ini mencakup aktivitas user login dan menambahkan kendaraan
-8. Ada fitur export laporan periodik yang menampilkan jumlah aktivitas perhari ( Aktivitas akan berkurang ketika user melakukan delete kedalam log history ) 
-
-
-
+1. Nyalakan server dan jalankan program dengancode php artisan serve
+2. Login dengan akun yang sudah tersedia jika ingin mwenggunakan akun lain bisa melakukan sign up pada halaman signup
+3. Setlah login akan di arahkan kedalam halaman dashboard
