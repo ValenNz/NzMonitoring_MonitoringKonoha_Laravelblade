@@ -23,11 +23,10 @@ username user yang menyetujui : approval@gmail.com
 password user yang menyetujui : 1234567890
 
 Database Version :
-    Database server
     Server: 127.0.0.1 via TCP/IP
     Server type: MariaDB
     Server connection: SSL is not being used Documentation
-    Server version: 10.4.21-MariaDB - mariadb.org binary distribution
+    Server version: 10.4.28-MariaDB - mariadb.org binary distribution
     Protocol version: 10
     User: root@localhost
     Server charset: UTF-8 Unicode (utf8mb4)
