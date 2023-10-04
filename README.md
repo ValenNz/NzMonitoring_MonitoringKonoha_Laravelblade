@@ -1,5 +1,20 @@
 ## About This Project
 
+#Preview Dashboard
+![dashboard](https://github.com/ValenNz/NzMonitoring_MonitoringKonoha_Laravelblade/assets/92833376/ce957b63-a2d5-44e7-a777-aa489ef08525)
+
+#Preview Vehcle
+![vehicle](https://github.com/ValenNz/NzMonitoring_MonitoringKonoha_Laravelblade/assets/92833376/f72ca9a4-3802-4361-96ac-cb46644e55b2)
+
+#Preview User
+![User](https://github.com/ValenNz/NzMonitoring_MonitoringKonoha_Laravelblade/assets/92833376/955bfed8-22e6-4363-8ef7-0ca8c6b83dcf)
+
+#Preview Rental
+![pemesanan](https://github.com/ValenNz/NzMonitoring_MonitoringKonoha_Laravelblade/assets/92833376/0bb89443-abd1-45c5-b17b-8d84c1a9c22a)
+
+#Prefiew Activiry
+![aktivitas](https://github.com/ValenNz/NzMonitoring_MonitoringKonoha_Laravelblade/assets/92833376/cf03e909-dfa8-4384-994d-0b00d4454de4)
+
 username-password, database version, php version, framework dan panduan penggunaan aplikasi.
 username admin : admin@gmail.com
 password admin : 1234567890
