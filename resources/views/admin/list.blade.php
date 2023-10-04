@@ -1,36 +1,45 @@
 @extends('home')
 @section('content')
-    <h4>User approval yang aktif</h4>
-    <div class="card">
-        <div class="content">
-            <div class="card-body">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th># </th>
-                            <th>Username</th>
-                            <th>Email</th>
-                            <th>Phone</th>
-                            <th>Address</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach ($data as $item)
-                            <tr>
-                                <td>{{ $loop->iteration }}</td>
-                                <td>{{ $item->username }}</td>
-                                <td>{{ $item->email }}</td>
-                                <td>{{ $item->phone }}</td>
-                                <td>{{ $item->address }}</td>
-                            </tr>
-                        @endforeach
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">User List</h6>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>No</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    @foreach ($data as $item)
+                    <tr>
+                        <td>{{ $loop->iteration }}</td>
+                        <td>{{ $item->username }}</td>
+                        <td>{{ $item->email }}</td>
+                        <td>{{ $item->phone }}</td>
+                        <td>{{ $item->address }}</td>
 
-                    </tbody>
-
-
-                </table>
-            </div>
-            {{-- <div class="card-footer">{{ $dtlayanan->links() }}</div> --}}
+                        <td></td>
+                    </tr>
+                @endforeach
+                </tbody>
+            </table>
         </div>
     </div>
+</div>
 @endsection

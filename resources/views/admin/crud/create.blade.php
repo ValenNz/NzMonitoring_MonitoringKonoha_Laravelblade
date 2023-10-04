@@ -7,7 +7,7 @@
                 <label for="vehicle" class="form-label">vehicle</label>
                 <select name="vehicle" id="vehicle" class="form-select">
                     @foreach ($vehicle as $item)
-                        <option value="{{ @$item->nama }}">{{ @$item->nama }}</option>
+                        <option value="{{ @$item->merk }}">{{ @$item->merk }}</option>
                     @endforeach
                 </select>
             </div>

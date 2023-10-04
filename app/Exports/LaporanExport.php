@@ -7,7 +7,7 @@ use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\WithHeadings;
 use Maatwebsite\Excel\Concerns\Exportable;
 use App\Models\History;
-use App\Models\LaporanPeriodik;
+use App\Models\Report;
 use Maatwebsite\Excel\Concerns\WithMapping;
 
 class LaporanExport implements FromCollection, WithHeadings
@@ -17,7 +17,7 @@ class LaporanExport implements FromCollection, WithHeadings
      */
     public function collection()
     {
-        $histories = LaporanPeriodik::select('id', 'time', 'total_activity')->get();
+        $histories = Report::select('id', 'time', 'total_activity')->get();
         return $histories;
     }
     public function headings(): array

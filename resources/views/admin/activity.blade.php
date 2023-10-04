@@ -1,45 +1,50 @@
 @extends('home')
 @section('content')
-    <h5>Log Aktivitas Semua fitur</h5>
-    <div class="card">
-        <div class="content">
-            <div class="card-body">
-                <table class="table table-bordered">
+<div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Activity List</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th># </th>
+                            <th>No</th>
                             <th>Activity</th>
                             <th>Time</th>
                             <th>Action</th>
                         </tr>
                     </thead>
+                    <tfoot>
+                        <tr>
+                            <th>No</th>
+                            <th>Activity</th>
+                            <th>Time</th>
+                            <th>Action</th>
+                        </tr>
+                    </tfoot>
                     <tbody>
                         @forelse($dt as $item)
-                            <tr>
-                                <td>{{ $loop->iteration }}</td>
-                                <td>{{ $item->username }} {{ $item->activity }}</td>
-                                <td>{{ $item->created_at }}</td>
-                                <td>
-                                    <form action="{{ route('activity.destroy', $item->id) }}" method="POST">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button type="submit" class="btn btn-link text-danger">
-                                            <i class="fa fa-trash"></i>
-                                        </button>
-                                    </form>
-                                </td>
-                            </tr>
+                        <tr>
+                            <td>{{ $loop->iteration }}</td>
+                            <td>{{ $item->username }} {{ $item->activity }}</td>
+                            <td>{{ $item->created_at }}</td>
+                            <td>
+                                <form action="{{ route('activity.destroy', $item->id) }}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                </form>
+                            </td>
+                        </tr>
                         @empty
                             <tr>
                                 <td class="text-center">Data kosong</td>
                             </tr>
                         @endforelse
                     </tbody>
-
-
                 </table>
             </div>
-            {{-- <div class="card-footer">{{ $dtlayanan->links() }}</div> --}}
         </div>
     </div>
 @endsection
